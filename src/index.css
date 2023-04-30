@@ -1,13 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.examples {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.examples_header {
+  background: #666;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.stats_toggle {
+  margin-left: auto;
+}
+
+.vr_button {
+  margin-left: 20px;
+}
+
+.examples_header h1 {
+  font-size: 16px;
+  margin: 0 20px 0 0;
+}
+
+.examples_header .repo_link {
+  margin-left: 30px;
+  text-decoration: none;
+}
+.examples_header .repo_link > img {
+  vertical-align: bottom;
+}
+
+a {
+  color: #00b3ee;
+}
+
+.examples_body {
+  position: relative;
+  flex: 1;
+  overflow: hidden;
+}
+
+.example_controls {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  background: rgba(34, 34, 34, 0.8);
+}
+
+.example_desc {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.react-dat-gui {
+  top: 0;
+  color: #fff;
+  z-index: 1000;
+  background-color: #ffffff00;
+  left: 0;
+  max-height: 80%;
+  overflow: auto;
 }
